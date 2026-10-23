@@ -1,0 +1,20 @@
+services:
+  payglocal-app:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "${PORT:-3010}:3000"
+    environment:
+      - PAYGLOCAL_MID
+      - PAYGLOCAL_KID
+      - PAYGLOCAL_PRIVATE_KEY
+      - PAYGLOCAL_API_BASE
+      - APP_URL
+      - STOREFRONT_URL
+      - ALLOWED_SALEOR_URL
+      - PAYGLOCAL_TXN_STORE=/data/.payglocal-txn.json
+    volumes:
+      - payglocal-data:/data
+
+volumes:
+  payglocal-data:

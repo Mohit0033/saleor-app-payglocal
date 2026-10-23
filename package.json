@@ -1,0 +1,31 @@
+{
+  "name": "saleor-app-payglocal",
+  "version": "1.0.0",
+  "private": true,
+  "license": "(BSD-3-Clause AND CC-BY-4.0)",
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS=--inspect next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "check-types": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "@saleor/app-sdk": "1.13.0",
+    "next": "15.5.9",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "urql": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "cross-env": "^10.1.0",
+    "typescript": "5.0.4"
+  }
+}

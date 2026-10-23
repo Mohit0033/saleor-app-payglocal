@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+.env
+.env.*
+!.env.example
+saleor-app.json
+.payglocal-txn.json
+*.pem
+tsconfig.tsbuildinfo
+next-env.d.ts
+.DS_Store
